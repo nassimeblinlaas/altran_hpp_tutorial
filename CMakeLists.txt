@@ -51,6 +51,7 @@ install(FILES
   urdf/door.urdf
   urdf/box_color.urdf
   urdf/rod.urdf
+  urdf/fleche.urdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
   )
 install(FILES
@@ -60,6 +61,7 @@ install(FILES
   srdf/cup.srdf
   srdf/rod.srdf
   srdf/door.srdf
+  srdf/fleche.srdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/srdf
   )
 install(FILES
@@ -78,6 +80,10 @@ install (FILES
   src/hpp/corbaserver/manipulation/pr2/robot.py
   src/hpp/corbaserver/manipulation/pr2/__init__.py
   DESTINATION ${PYTHON_SITELIB}/hpp/corbaserver/manipulation/pr2)
+install (FILES
+  src/hpp/corbaserver/drones/fleche.py
+  src/hpp/corbaserver/drones/__init__.py
+  DESTINATION ${PYTHON_SITELIB}/hpp/corbaserver/fleche)
 
 # Installation for documentation
 IF(INSTALL_DOCUMENTATION)
